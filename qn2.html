@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration form</title>
+    <style>
+        select,textarea,input[type="text"],input[type="date"],input[type="email"],input[type="tel"]{
+            float: right;
+        }
+        div{
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2><b>Registration Form</b></h2>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="30" required>
+        <br><br>
+        <label for="registerNumber">Register Number:</label>
+        <input type="text" id="registerNumber" name="registerNumber" required>
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <label for="program">Program:</label>
+        <select id="program" name="program" required>
+          <option value="0">Select a program</option>
+          <option value="1">BITAM</option>
+          <option value="2">BCS</option>
+          <option value="3">BSE</option>
+        </select>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="tempAddress">Temporary Address:</label>
+        <textarea id="tempAddress" name="tempAddress" required></textarea>
+        <br><br>
+        <label for="permAddress">Permanent Address:</label>
+        <textarea id="permAddress" name="permAddress" disabled></textarea>
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+        <label for="sameAddress">Permanent address is same as temporary address:</label>
+        <input type="checkbox" id="sameAddress" name="sameAddress">
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+      </div>
+      <script src="qn2.js"></script>      
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form validation</title>
+    <style>
+        #one{
+            margin-right: auto;
+            margin-left: auto;
+            width: 400px;
+            height: 300px;
+            
+        }
+        label{
+            transform: translate(10%,50%);
+        }
+        select,input[type="text"],input[type="password"],input[type="email"],input[type="tel"]{
+            transform: translate(20%,40%);
+            width: 170px;
+            height: 20px;
+            float: right;
+        }
+        #submit,#reset{
+            height: 30px;
+            width: 100px;
+            background-color: lightgray;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="one">
+        <h2><b>Test JavaScript Form Validation</b></h2>
+    <form id="myForm">
+        <label >Name* <input type="text" id="name" required title="please enter your name!" maxlength="20"><br><br></label>
+        <label >Address <input type="text" id="Address" placeholder="Address"><br><br></label>
+        <label >Zip Code* <input type="text" id="Zip Code" required title="please enter your Zip Code!"><br><br></label>
+        <label >Country*</label>
+        <select name="Countries" id="country" required>
+            <option value="doit">please select your country</option>
+            <option value="America">America</option>
+            <option value="Brazil">Brazil</option>
+            <option value="China">China</option>
+            <option value="Damascus">Damascus</option>
+        </select>
+        <br>
+        <br>
+        <label >Gender* <input type="radio" id="gender">Male <input type="radio" id="gender">Female <br><br></label>
+        <label >Preferences* <input type="checkbox" id="Preferences">Red <input type="checkbox" id="Preferences">Green <input type="checkbox" id="Preferences">Blue <br><br></label>
+        <label >Phone* <input type="tel" id="phone" required title="please enter your phone numer!"><br><br></label>
+        <label >Email* <input type="email" id="email" required title="please enter your Email!"><br><br></label>
+        <label >Password* <input type="password" id="password" minlength="6" maxlength="8" required title="please enter your password!"><br><br></label>
+        <input type="submit" id="submit">
+        <input type="reset" id="reset">
+    </form>
+    </div>
+    <script src="qn1.js"></script>
+</body>
+</html>
